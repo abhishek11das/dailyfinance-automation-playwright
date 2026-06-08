@@ -8,8 +8,6 @@ The following key modules/pages are automated:
 * Log in with the last registered user and update their profile image.
 * Then login with the user and add random 2 items and assert that 2 items are showing on the item list
 * Then go to profile settings and upload a profile photo and logout
-* Then click on "Reset it here" from login page and then reset new password 
-* Finally login with with the new password and assert that login is successful.
 
 For failed test cases it will take a screenshot aswell at the point of failure.
 
@@ -18,8 +16,6 @@ For failed test cases it will take a screenshot aswell at the point of failure.
 * Login (valid & invalid scenarios)
 * Add Item (positive & negative scenarios)
 * Profile Update (including profile image upload)
-* Reset Password (mismatched passwords, unregistered email, empty fields)
-* Register (duplicate email, weak password, empty fields)
 
 ### Data Handling:
 
@@ -28,7 +24,7 @@ For failed test cases it will take a screenshot aswell at the point of failure.
 
 ### Automation Flow:
 
-* Tests run sequentially: Register → Login → Add Item → Profile Update → Reset Password .
+* Tests run sequentially: Register → Login → Add Item → Profile Update → Logout .
 * Handled dynamic data (like last registered user) and verified results in the UI.
 
 ### Advanced Features:
@@ -85,17 +81,4 @@ allure open allure-report
 allure serve allure-results
 ```
 
-#### Here is the Negative Test Case Link:
-* [Test Case Sheet](https://docs.google.com/spreadsheets/d/1rmZehwORNwKmH_WuI7QY3Rz4scTAqsMMwDyu-T5Fun4/edit?usp=sharing)
 
-#### Here is the OverView Allure report:
-<img width="1919" height="918" alt="Screenshot 2026-02-04 040232" src="https://github.com/user-attachments/assets/5dc3ede1-603a-419e-bc3d-1056f2c2726c" />
-
-#### Here are the Allure Behaviors of this project:
-<img width="1909" height="916" alt="Screenshot 2026-02-04 040205" src="https://github.com/user-attachments/assets/e60d26fc-9f48-4f8c-819b-36991a679386" />
-
-#### Here are the allure suites of this project:
-<img width="1918" height="927" alt="Screenshot 2026-02-04 040156" src="https://github.com/user-attachments/assets/1e942832-db49-4873-9e58-5bf52f4fbba7" />
-
-#### Here is the Project Video:
-https://github.com/user-attachments/assets/5c3fbdc8-ac6a-44fd-b1f0-120b300dfcbb
